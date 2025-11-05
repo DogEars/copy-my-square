@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Search, Database, FileText, Users, ArrowRight, Shield, Zap, BarChart3 } from "lucide-react";
+import beanLogo from "@/assets/bean-logo.png";
 
 const Index = () => {
   return (
@@ -10,8 +11,8 @@ const Index = () => {
       <nav className="border-b bg-card">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Shield className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold text-foreground">InsureTech</span>
+            <img src={beanLogo} alt="Data-Beans Logo" className="h-8 w-8" />
+            <span className="text-2xl font-bold text-foreground">Data-Beans</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
@@ -211,8 +212,8 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Shield className="h-6 w-6 text-primary" />
-                <span className="text-xl font-bold">InsureTech</span>
+                <img src={beanLogo} alt="Data-Beans Logo" className="h-6 w-6" />
+                <span className="text-xl font-bold">Data-Beans</span>
               </div>
               <p className="text-muted-foreground">
                 Modern insurance platform for forward-thinking companies
@@ -244,7 +245,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2025 InsureTech. All rights reserved.</p>
+            <p>&copy; 2025 Data-Beans. All rights reserved.</p>
           </div>
         </div>
       </footer>
