@@ -2,9 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Search, Database, FileText, Users, ArrowRight, Shield, Zap, BarChart3 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import beanLogo from "@/assets/bean-logo.png";
 
 const Index = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -18,7 +21,7 @@ const Index = () => {
             <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
             <a href="#solutions" className="text-muted-foreground hover:text-foreground transition-colors">Solutions</a>
             <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
-            <Button>Get Started</Button>
+            <Button onClick={() => navigate("/auth")}>Login</Button>
           </div>
         </div>
       </nav>
